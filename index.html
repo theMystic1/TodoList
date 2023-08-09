@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My TodoList</title>
+  </head>
+  <body>
+    <h1 class="heading">My Todo Lists</h1>
+    <div class="todo-grid">
+      <div>
+        <input type="text" class="input--items items" />
+      </div>
+      <div>
+        <input type="date" class="input--date date" />
+      </div>
+
+      <button type="submit" class="btn submit-btn">Add Todo</button>
+
+      <button class="btn show-btn">Show Todo</button>
+    </div>
+    <section class="todo-section">
+      <div class="todos">
+        <div class="display--todo todo-grid">
+          <button 
+    class="todo-complete ">
+      <ion-icon name="checkbox" class="hidden todo--done"></ion-icon>    
+
+      <ion-icon name="square-outline" class=" todo-box"></ion-icon> 
+    </button>
+    <div class="items-todo">
+    
+     </div>
+    <div class="items-time"> </div>
+    <div>
+      <button class="delete-btn dbtn"><ion-icon name="close-circle"></ion-icon></button">
+    </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

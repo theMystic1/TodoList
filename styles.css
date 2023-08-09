@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 500;
+  font-size: 4.8rem;
+  padding: 4.8rem 0;
+}
+
+.todo-grid {
+  max-width: 80rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+  margin: 2rem auto;
+}
+
+.items,
+.date {
+  height: 3.6rem;
+  max-width: 20rem;
+  color: #9b0d83;
+  border: 0.2rem solid #9b0d83;
+  font-size: 1.6rem;
+}
+.items,
+.date,
+.btn {
+  border-radius: 0.5rem;
+}
+
+.items:focus,
+.date:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 0.7rem 3rem;
+  font-weight: 600;
+  border: none;
+  background-color: #9b0d83;
+  color: #fff;
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(62, 63, 64, 0.99);
+  cursor: pointer;
+  transition: all 600ms;
+  font-size: 1.4rem;
+}
+
+.show-btn {
+  background-color: #c1c1c1;
+  color: #9b0d83;
+}
+
+.btn:hover {
+  background-color: rgba(252, 212, 245, 0.97);
+  border: 0.1rem solid #9b0d83;
+  color: rgba(155, 13, 131, 0.963);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: translateY(0.2rem);
+}
+
+.todo-section {
+  transition: all 1000ms;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.todos {
+  opacity: 0;
+  /* border-bottom: 0.2rem solid #c1c1c1; */
+}
+.display--todo {
+  /* display: grid; */
+  grid-template-columns: 3rem 2fr 1fr 3rem;
+  gap: 2rem;
+  align-items: center;
+  padding: 3.2rem 0;
+}
+
+.items-todo {
+  /* background-image: linear-gradient(
+    to left top,
+    rgb(155, 13, 131, 0.963),
+    rgb(252, 212, 245, 0.97)
+  ); */
+  flex: 1;
+}
+
+.items-time {
+  max-height: 20rem;
+}
+
+.todo-complete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-complete > ion-icon {
+  font-size: 2.4rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.todo--done {
+  color: rgb(7, 76, 8);
+}
+
+.todo-box {
+  color: rgb(153, 153, 153);
+}
+
+.dbtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.dbtn > ion-icon {
+  font-size: 2.8rem;
+}
